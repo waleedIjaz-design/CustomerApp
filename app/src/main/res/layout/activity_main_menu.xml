@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryVariant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35.0sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arkhip_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:text="Vehicle Assistant" />
+        <TextView
+            android:textSize="18.0sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/arkhip_font"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="MENU" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20.0dip"
+        android:background="#FF9100"
+        android:layout_below="@id/menu">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/customborder"
+                android:backgroundTint="@color/black"
+                android:padding="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25.0dip">
+                <ImageButton
+                    android:id="@+id/btnNearMechanic"
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mechanicshop"
+                    android:onClick="onClick" />
+
+                <TextView
+                    android:textSize="15.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:textStyle="bold"
+                    android:textColor="@color/ballPressColor"
+                    android:text="    Mechanic shops"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/customborder"
+                android:backgroundTint="@color/black"
+                android:padding="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25.0dip">
+                <ImageButton
+                    android:id="@+id/btnFindMechanic"
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mechanic"
+                    android:onClick="onClick" />
+
+                <TextView
+                    android:textSize="15.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:textStyle="bold"
+                    android:textColor="@color/ballPressColor"
+                    android:text="      Find Mechanic"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="1dp"
+                android:background="@drawable/customborder"
+                android:backgroundTint="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25.0dip">
+
+                <ImageButton
+                    android:id="@+id/btnCarParts"
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/carpart"
+                    android:onClick="onClick" />
+
+                <TextView
+                    android:textSize="15.0dip"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ballPressColor"
+                    android:text="       Car Spare Parts" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/customborder"
+                android:padding="1dp"
+                android:backgroundTint="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25.0dip">
+
+                <ImageButton
+                    android:id="@+id/btnBikeParts"
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bikepart"
+                    android:onClick="onClick" />
+
+                <TextView
+                    android:textSize="15.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/ballPressColor"
+                    android:text="       Bike Spare Parts" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

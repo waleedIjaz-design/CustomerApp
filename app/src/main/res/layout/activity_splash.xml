@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryVariant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/tv1"
+        android:textSize="36.0dip"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Services"
+        android:layout_marginTop="284dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/assistant"
+        android:textSize="36.0dip"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assistant "
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

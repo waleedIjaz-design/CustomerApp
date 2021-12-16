@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".FindNearMechanic">
+
+    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/linear_layout"
+        android:paddingTop="10.0dip"
+        android:paddingBottom="10.0dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:id="@+id/shops_nearby"
+            android:enabled="true"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:src="@drawable/ic_repairing_car"
+            android:onClick="onClick"
+            android:contentDescription="@string/app_name" />
+        <ImageButton
+            android:id="@+id/car_wash_nearby"
+            android:enabled="true"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:src="@drawable/ic_local_car_wash_black_24dp"
+            android:onClick="onClick"
+            android:contentDescription="@string/app_name" />
+        <ImageButton
+            android:id="@+id/petrol_pumps_nearby"
+            android:enabled="true"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:src="@drawable/ic_local_gas_station_black_24dp"
+            android:onClick="onClick"
+            android:contentDescription="@string/app_name" />
+        <ImageButton
+            android:id="@+id/gym"
+            android:enabled="true"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:src="@drawable/ic_dumbell_excersise"
+            android:onClick="onClick"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+</RelativeLayout>
